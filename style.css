@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557 */
+
+.banner{
+    text-align: center;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 75%;
+}
+
+.banner h1{
+    position:absolute;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    font-family: 'inter';
+    font-size: 1.3rem;
+    background-color: #457B9D;
+    padding: 10px 15px 10px 15px;
+    border-radius: 6px;
+    opacity: 90%;
+    
+}
+
+.banner h3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+    font-family: 'inter';
+    font-size: 0.9rem;
+    background-color: #1D3557;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 85%;
+}
+
+.top-activity {
+    margin-top: -30px;
+    margin-bottom: 20px;
+    background-color: #F1FAEE;
+}
+
+.top-activity h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Inter', sans-serif;
+    color: #1D3557;
+}
+
+
+.act-container {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #1D3557;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 40px;
+    box-sizing:inherit;
+}
+
+.act-container p {
+    font-size: 0.8rem;
+}
+
+.act-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.local-insider-card{
+  display: block;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+
+ .card-container{
+    width: 350px;
+    margin: 20px 0 30px 0;
+    display: flex;
+    text-align: center;
+    padding: 20px;
+    background-color: #A8DADC;
+    border-bottom: #457B9D solid 7px;
+    border-radius: 7px;
+    justify-content: space-around; 
+ }
+
+ .card-container img{
+    width: auto;
+    border-radius: 10px;
+ }
+
+.txt-area{
+    padding: 0 20px 0 20px;
+    font-family: 'inter';
+    font-size: 0.8rem;
+    color: #1D3557;
+}
+
+ footer{
+      display: block;
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      font-weight: 400;
+      font-family: 'inter';
+      font-style: italic;
+      font-size: 0.8rem;
+      color: #1D3557;
+    
+ }
