@@ -110,11 +110,16 @@ DARK BLUE: #1D3557 */
     border-radius: 10px;
  }
 
-.txt-area{
+.card-txt{
     padding: 0 20px 0 20px;
     font-family: 'inter';
     font-size: 0.8rem;
     color: #1D3557;
+}
+
+a{
+    text-decoration: none;
+    color: #1D3557;    
 }
 
  footer{
@@ -128,4 +133,9 @@ DARK BLUE: #1D3557 */
       font-size: 0.8rem;
       color: #1D3557;
     
+ }
+
+ footer a{
+    text-decoration: underline;
+    color: #E63946;
  }
