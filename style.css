@@ -8,8 +8,9 @@ AQUA: #A8DADC
 LIGHT BLUE: #457B9D
 DARK BLUE: #1D3557 */
 
-*{
+* {
     margin: 0;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -17,14 +18,14 @@ DARK BLUE: #1D3557 */
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/dugn4h9ao/image/upload/v1726037764/Welcome-to-Udi.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('https://res.cloudinary.com/dugn4h9ao/image/upload/v1726037764/Welcome-to-Udi.jpg');
     background-size: cover;
     height: 100vh;
 
-  }
+}
 
-.banner h1{
-    color:#ffffff;
+.banner h1 {
+    color: #ffffff;
     font-family: 'inter';
     font-size: 1.3rem;
     background-color: #457B9D;
@@ -32,11 +33,11 @@ DARK BLUE: #1D3557 */
     border-radius: 6px;
     opacity: 70%;
     margin-bottom: 10px;
-    
+
 }
 
-.banner h3{
-    color:#ffffff;
+.banner h3 {
+    color: #ffffff;
     font-family: 'inter';
     font-size: 0.9rem;
     background-color: #1D3557;
@@ -67,11 +68,15 @@ DARK BLUE: #1D3557 */
     color: #1D3557;
     font-family: 'Inter', sans-serif;
     margin-bottom: 40px;
-    box-sizing:inherit;
+    box-sizing:border-box;
 }
 
 .act-container p {
     font-size: 0.8rem;
+}
+
+.act-container h4{
+    margin-bottom: 20px;
 }
 
 .act-container img {
@@ -81,57 +86,103 @@ DARK BLUE: #1D3557 */
     object-fit: cover;
 }
 
-.local-insider-card{
-  display: block;
-  width:fit-content;
-  margin-left: auto;
-  margin-right: auto;
-    
+.local-insider-card {
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
- .card-container{
+.card-container {
     width: 350px;
-    margin: 20px 0 30px 0;
+    margin: 20px 0 20px 0;
     display: flex;
     text-align: center;
     padding: 20px;
     background-color: #A8DADC;
     border-bottom: #457B9D solid 7px;
     border-radius: 7px;
-    justify-content: space-around; 
- }
+    justify-content: space-around;
+}
 
- .card-container img{
+.card-container img {
     width: auto;
     border-radius: 10px;
- }
+}
 
-.card-txt{
+.card-txt {
     padding: 20px 20px 0 20px;
     font-family: 'inter';
     font-size: 0.8rem;
     color: #1D3557;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #1D3557;    
+    color: #1D3557;
 }
 
- footer{
-      display: flex;
-      justify-content: center;
-      font-weight: 400;
-      font-family: 'inter';
-      font-style: italic;
-      font-size: 0.8rem;
-      color: #1D3557;
-      
-    
-    
- }
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'inter';
+    font-style: italic;
+    font-size: 0.8rem;
+    color: #1D3557;
 
- footer a{
+}
+
+footer a {
     text-decoration: underline;
     color: #E63946;
- }
+}
+
+@media only screen and (max-width:915px){
+
+    .banner h1{
+        font-size: 2.2em;
+    }
+
+    .banner h3{
+        font-size: 1.4em;
+    }
+
+    .banner, .act-container{
+        flex-wrap: wrap;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .top-activity h2{
+        font-size: 2em;
+        padding:50px 35px 20px 35px;
+}
+
+    .local-insider-card {
+        display: flex;
+        justify-content: center;    
+    }
+  
+    .act-container h4{
+        font-size: 1.4em;
+        margin-bottom: 20px;
+    }
+    .act-container p{
+        font-size: 1.2em;
+        margin-bottom: 40px;
+    }
+
+    footer{
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1em;
+        text-align: center;
+        margin:0 auto;
+    }
+}
