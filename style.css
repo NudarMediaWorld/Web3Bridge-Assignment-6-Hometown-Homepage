@@ -141,6 +141,7 @@ footer a {
     color: #E63946;
 }
 
+/*Responsive Style*/
 @media only screen and (max-width:915px){
 
     .banner h1{
